@@ -28,7 +28,7 @@ header {
     border-radius: 18px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     position: relative;
-    padding: 32px 24px 10px 24px;
+    padding: 40px 24px 10px 24px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1940,7 +1940,7 @@ main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, sectio
 
 .current-datetime {
     position: absolute;
-    top: 8px;
+    top: 16px;
     right: 18px;
     font-size: 1.32rem;
     font-weight: 700;
@@ -1979,7 +1979,7 @@ section,
 
 /* 렌탈 페이지 '기본정보 입력' 카드와 헤더도 600px로 통일 */
 .main-card {
-    max-width: 600px !important;
+    max-width: 700px !important;
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
