@@ -92,6 +92,7 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 /* 섹션 공통 스타일 */
@@ -1267,12 +1268,13 @@ h1 .highlight {
 }
 
 .facility-qr-row {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
     display: flex;
     justify-content: center;
     align-items: stretch;
     width: 100%;
     max-width: 900px;
-    margin-top: 0 !important;
     gap: 32px;
     box-sizing: border-box;
 }
@@ -1864,4 +1866,36 @@ h1 .highlight {
     width: 100%;
     margin-bottom: 8px !important;
   }
+}
+
+.tab-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* 안내 카드 높이 균등하게 */
+@media (min-width: 901px) {
+  .facility-qr-row {
+    align-items: stretch !important;
+  }
+  .facility-info-card,
+  .qr-info-card {
+    height: 100%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* 탭 버튼 가로 길이 늘리기 */
+.tab-btn, .tab-btn.wide-tab {
+    max-width: 260px;
+    min-width: 180px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.tab-row {
+    justify-content: center;
 } 
