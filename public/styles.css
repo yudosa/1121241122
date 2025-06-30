@@ -885,15 +885,19 @@ h1 .highlight {
     }
 }
 
-.facility-info-card {
-    background: linear-gradient(120deg, #fdf6e3 0%, #e0f7fa 100%);
-    border: 2px solid #ffe0b2;
-    box-shadow: 0 4px 16px rgba(255, 224, 178, 0.13);
+.facility-info-card,
+.qr-info-card {
+    flex: 1 1 0;
+    max-width: 260px;
+    min-width: 160px;
+    width: 100%;
+    margin-bottom: 0 !important;
+    background: #fffbe8;
     border-radius: 18px;
-    padding: 10px 8px !important;
-    margin: 8px auto 0 auto;
-    max-width: 480px;
-    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1.5px solid #ffe0a3;
+    padding: 18px 12px;
+    box-sizing: border-box;
 }
 
 .facility-contact {
@@ -958,7 +962,7 @@ h1 .highlight {
 }
 
 .main-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: #ff9800;
     letter-spacing: -1.2px;
@@ -1215,18 +1219,6 @@ h1 .highlight {
     margin-top: 18px;
 }
 
-.facility-title {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: #ff9800;
-    letter-spacing: -0.5px;
-}
-
-.facility-address {
-    font-size: 1.08rem;
-    color: #555;
-}
-
 .facility-contact-row {
     display: flex;
     flex-direction: row;
@@ -1284,10 +1276,16 @@ h1 .highlight {
 .facility-info-card,
 .qr-info-card {
     flex: 1 1 0;
-    max-width: 320px;
-    min-width: 180px;
+    max-width: 260px;
+    min-width: 160px;
     width: 100%;
     margin-bottom: 0 !important;
+    background: #fffbe8;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1.5px solid #ffe0a3;
+    padding: 18px 12px;
+    box-sizing: border-box;
 }
 @media (max-width: 700px) {
     .facility-qr-row {
@@ -1309,19 +1307,6 @@ h1 .highlight {
     text-align: center;
 }
 
-.qr-info-card {
-    background: linear-gradient(120deg, #fdf6e3 0%, #e0f7fa 100%);
-    border: 2px solid #ffe0b2;
-    box-shadow: 0 4px 16px rgba(255, 224, 178, 0.13);
-    border-radius: 18px;
-    padding: 10px 8px !important;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px !important;
-}
 .qr-info-card h3 {
     margin-bottom: 18px;
 }
@@ -1957,7 +1942,7 @@ section h3 {
     position: absolute;
     top: 32px;
     right: 18px;
-    font-size: 1.32rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #444;
     margin: 0;
@@ -1983,4 +1968,14 @@ section h3 {
     .container.vertical-layout {
         padding-top: 2vh;
     }
+}
+
+.tab-section h2,
+.main-card h2,
+section h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 0.7em;
+    margin-top: 0.5em;
+    text-align: center;
 } 
