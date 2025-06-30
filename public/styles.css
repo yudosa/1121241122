@@ -958,8 +958,7 @@ h1 .highlight {
 }
 
 .main-title {
-    display: block;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 900;
     color: #ff9800;
     letter-spacing: -1.2px;
@@ -1005,7 +1004,7 @@ h1 .highlight {
     align-items: center;
     justify-content: center;
     gap: 18px;
-    margin: 2rem auto 0.5em auto;
+    margin-top: 1rem;
     flex-wrap: wrap;
 }
 .welcome-texts {
@@ -1272,15 +1271,34 @@ h1 .highlight {
 }
 
 .facility-qr-row {
-    margin-top: -16px !important;
-    padding-top: 0 !important;
-    display: flex;
+    max-width: 900px !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: center;
     align-items: stretch;
-    width: 100%;
-    max-width: 900px;
-    gap: 32px;
+    gap: 24px;
+    margin: 0 auto !important;
     box-sizing: border-box;
+}
+.facility-info-card,
+.qr-info-card {
+    flex: 1 1 0;
+    max-width: 320px;
+    min-width: 180px;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+@media (max-width: 700px) {
+    .facility-qr-row {
+        flex-direction: column !important;
+        max-width: 100% !important;
+        gap: 12px;
+    }
+    .facility-info-card,
+    .qr-info-card {
+        max-width: 100%;
+    }
 }
 
 .facility-qr-row section {
