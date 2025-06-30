@@ -745,11 +745,14 @@ textarea {
 }
 
 .container.vertical-layout {
-    padding: 0 !important;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block !important;
+    min-height: unset !important;
+    height: auto !important;
+}
+main, .facility-qr-row {
+    flex: none !important;
+    height: auto !important;
+    min-height: 0 !important;
 }
 
 header, section {

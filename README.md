@@ -444,3 +444,14 @@ db.pool.connect()
 - 모바일 최적화 (768px 이하): 단일 컬럼, 터치 친화적, 빠른 로딩
 - 데스크톱 지원 (1024px 이상): 다중 컬럼, 마우스 인터랙션, 고해상도 지원
 - 안내 카드(시설 안내/QR 안내) 높이 균등, 탭 버튼 가로 길이 증가 등 최신 UX 반영
+
+.facility-qr-row, .container, main {
+    gap: 0 !important;
+}
+.facility-qr-row > *,
+.tab-section > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
