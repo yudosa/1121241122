@@ -1890,12 +1890,25 @@ h1 .highlight {
 
 /* 탭 버튼 가로 길이 늘리기 */
 .tab-btn, .tab-btn.wide-tab {
-    max-width: 260px;
-    min-width: 180px;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 240px !important;
+    min-width: 200px !important;
+    max-width: 260px !important;
+    padding-left: 36px !important;
+    padding-right: 36px !important;
+    box-sizing: border-box;
+    font-size: 1.18rem;
+    text-align: center;
+    display: inline-block;
 }
 
 .tab-row {
-    justify-content: center;
+    justify-content: center !important;
+    gap: 18px !important;
+}
+
+main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, section {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
 } 
