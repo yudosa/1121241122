@@ -1,0 +1,32 @@
+name: reservation-system
+services:
+  - name: reservation-backend
+    source:
+      type: git
+      url: https://github.com/yudosa/hdycc1.git
+      branch: main
+    build:
+      type: nodejs
+      version: 18
+      buildCommand: npm install
+      startCommand: npm start
+    env:
+      - name: NODE_ENV
+        value: production
+      - name: PORT
+        value: 3000
+      - name: DATABASE_PATH
+        value: /app/database/reservations.db
+    resources:
+      cpu: 0.5
+      memory: 512Mi
+    ports:
+      - port: 3000
+        protocol: http
+    healthCheck:
+      path: /health
+      port: 3000
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      timeoutSeconds: 5
+      failureThreshold: 3 
