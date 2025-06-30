@@ -1964,7 +1964,7 @@ main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, sectio
 header,
 .tab-section,
 section {
-    max-width: 480px;
+    max-width: 600px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
