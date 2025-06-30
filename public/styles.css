@@ -1268,7 +1268,7 @@ h1 .highlight {
 }
 
 .facility-qr-row {
-    margin-top: 0 !important;
+    margin-top: -16px !important;
     padding-top: 0 !important;
     display: flex;
     justify-content: center;
