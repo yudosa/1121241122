@@ -1914,4 +1914,24 @@ main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, sectio
     margin-top: 0 !important;
     padding-bottom: 0 !important;
     padding-top: 0 !important;
+}
+
+@media (min-width: 600px) {
+  .facility-qr-row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto !important;
+  }
+  .facility-info-card,
+  .qr-info-card {
+    flex: 1 1 0;
+    max-width: 400px;
+    min-width: 260px;
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
 } 
