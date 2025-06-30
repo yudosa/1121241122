@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="current-datetime"></div>
     <div class="container vertical-layout">
         <div class="main-img-block">
             <img src="hd.JPG" alt="흥덕청소년 문화의집 건물" class="main-building-img">
         </div>
         <header>
+            <div class="current-datetime"></div>
             <div class="welcome-block">
                 <span class="main-title">용인특례시 흥덕청소년문화의집<br>오신것을 환영합니다</span>
             </div>
@@ -173,12 +173,11 @@
         text-align: center;
     }
     .current-datetime {
-        position: absolute;
-        top: 18px;
-        right: 32px;
-        font-size: 1.08rem;
+        text-align: right;
+        font-size: 1.02rem;
         color: #888;
-        z-index: 100;
+        margin-bottom: 6px;
+        margin-right: 8px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .main-tabs .tab-row {
@@ -208,6 +207,10 @@
     }
     @media (max-width: 600px) {
         .tab-btn.wide-tab { font-size: 1rem; padding: 14px 0; }
+        .current-datetime {
+            text-align: center;
+            margin-right: 0;
+        }
     }
     </style>
 </body>
