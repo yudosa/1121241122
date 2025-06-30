@@ -28,7 +28,7 @@ header {
     border-radius: 18px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     position: relative;
-    padding: 40px 24px 10px 24px;
+    padding: 64px 24px 10px 24px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1375,12 +1375,18 @@ h1 .highlight {
 }
 
 .rental-form-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rental-form-centered > div,
+.rental-form-centered .form-group,
+.rental-form-centered .form-row {
     width: 100%;
-    max-width: 540px;
-    background: #fff;
-    padding: 60px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-section {
@@ -1872,7 +1878,7 @@ h1 .highlight {
 }
 
 .tab-section {
-    max-width: 480px;
+    max-width: 700px;
     width: 100%;
     margin: 0 auto 16px auto;
     box-sizing: border-box;
@@ -1940,7 +1946,7 @@ main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, sectio
 
 .current-datetime {
     position: absolute;
-    top: 16px;
+    top: 32px;
     right: 18px;
     font-size: 1.32rem;
     font-weight: 700;
