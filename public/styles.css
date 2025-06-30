@@ -888,8 +888,8 @@ h1 .highlight {
 .facility-info-card,
 .qr-info-card {
     flex: 1 1 0;
-    max-width: 260px;
-    min-width: 160px;
+    max-width: 200px;
+    min-width: 140px;
     width: 100%;
     margin-bottom: 0 !important;
     background: #fffbe8;
@@ -1276,8 +1276,8 @@ h1 .highlight {
 .facility-info-card,
 .qr-info-card {
     flex: 1 1 0;
-    max-width: 260px;
-    min-width: 160px;
+    max-width: 200px;
+    min-width: 140px;
     width: 100%;
     margin-bottom: 0 !important;
     background: #fffbe8;
@@ -1981,10 +1981,10 @@ section h2 {
 }
 
 .main-card h2 {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: calc(100% + 48px);
+    max-width: none;
+    margin-left: -24px;
+    margin-right: -24px;
     box-sizing: border-box;
     text-align: center;
     display: block;
