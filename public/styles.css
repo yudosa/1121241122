@@ -600,6 +600,7 @@ textarea {
     padding: 0;
     background: #f7f7f9;
     min-height: 100vh;
+    padding-top: 6vh;
 }
 
 /* 메인 빌딩 이미지 */
@@ -1004,7 +1005,7 @@ h1 .highlight {
     align-items: center;
     justify-content: center;
     gap: 18px;
-    margin: 0 auto 0.5em auto;
+    margin: 2rem auto 0.5em auto;
     flex-wrap: wrap;
 }
 .welcome-texts {
@@ -1917,31 +1918,21 @@ h1 .highlight {
     gap: 18px !important;
 }
 
-main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, section {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
-}
-
-@media (min-width: 600px) {
-  .facility-qr-row {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center;
-    align-items: stretch;
-    gap: 24px;
-    max-width: 900px;
-    margin: 0 auto !important;
-  }
-  .facility-info-card,
-  .qr-info-card {
-    flex: 1 1 0;
-    max-width: 400px;
-    min-width: 260px;
+main,
+.main-img-block,
+.main-building-img,
+header,
+.tab-section,
+section,
+.main-card,
+.main-card h2,
+.tab-section h3,
+section h3 {
+    max-width: 700px;
     width: 100%;
-    margin-bottom: 0 !important;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .current-datetime {
@@ -1970,31 +1961,8 @@ main, .tab-section, .facility-qr-row, .facility-info-card, .qr-info-card, sectio
     }
 }
 
-.main-img-block,
-.main-building-img,
-header,
-.tab-section,
-section,
-.main-card {
-    max-width: 700px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
-
-/* 렌탈 페이지 '기본정보 입력' 카드와 헤더도 600px로 통일 */
-.main-card {
-    max-width: 700px !important;
-    width: 100% !important;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
-.main-card h2 {
-    max-width: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+@media (max-width: 600px) {
+    .container.vertical-layout {
+        padding-top: 2vh;
+    }
 } 
