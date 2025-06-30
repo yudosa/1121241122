@@ -888,9 +888,9 @@ h1 .highlight {
 .facility-info-card,
 .qr-info-card {
     flex: 1 1 0;
-    max-width: 200px;
-    min-width: 140px;
+    max-width: 700px;
     width: 100%;
+    min-width: 140px;
     margin-bottom: 0 !important;
     background: #fffbe8;
     border-radius: 18px;
@@ -1263,7 +1263,7 @@ h1 .highlight {
 }
 
 .facility-qr-row {
-    max-width: 900px !important;
+    max-width: 700px !important;
     width: 100%;
     display: flex !important;
     flex-direction: row !important;
@@ -1276,9 +1276,9 @@ h1 .highlight {
 .facility-info-card,
 .qr-info-card {
     flex: 1 1 0;
-    max-width: 200px;
-    min-width: 140px;
+    max-width: 700px;
     width: 100%;
+    min-width: 140px;
     margin-bottom: 0 !important;
     background: #fffbe8;
     border-radius: 18px;
@@ -1834,12 +1834,12 @@ h1 .highlight {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto !important;
   }
   .facility-info-card,
   .qr-info-card {
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
     margin-bottom: 0 !important;
   }
@@ -1853,13 +1853,13 @@ h1 .highlight {
     justify-content: center;
     align-items: stretch;
     gap: 24px;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto !important;
   }
   .facility-info-card,
   .qr-info-card {
     flex: 1 1 0;
-    max-width: 400px;
+    max-width: 320px;
     min-width: 260px;
     width: 100%;
     margin-bottom: 0 !important;
@@ -1981,10 +1981,12 @@ section h2 {
 }
 
 .main-card h2 {
-    width: calc(100% + 48px);
-    max-width: none;
-    margin-left: -24px;
-    margin-right: -24px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 24px;
+    padding-right: 24px;
     box-sizing: border-box;
     text-align: center;
     display: block;
